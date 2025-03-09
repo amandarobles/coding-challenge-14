@@ -5,13 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Support Ticket System</title>
 </head>
+<style>
+    body {
+        background-color: lightgreen;
+        text-align:center;
+        margin: 0;
+        padding:0;
+    }
+    header, footer {
+        background-color: lightblue;
+        color: black;
+        padding:15px;
+    }
+    main {
+        padding: 20px;
+    }
+    #ticketContainer {
+        border: 2px dashed light pink;
+        padding: 20px;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .support-ticket {
+        border: 1px solid black;
+        width: 700px;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgb(195, 156, 213);
+        margin: 10px 0;
+        font-size: 16px;
+        box-shadow: 2px 2px 5px rgba (0,0,0,0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .priority-label {
+        font-weight: bold;
+        display: block;
+        margin-top: 5px;
+    }
+    .resolve-button{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: lightpink;
+        color: rgb black;
+        cursor: pointer;
+    }
+    .resolve-button:hover {
+        background-color: light red !important;
+        border: 1px solid black !important;
+    }
+    
+</style>
 <body>
     <header>
         <h1>Customer Support Ticket System</h1>
     </header>
     <main>
-        <button id="addTicket">Add Ticket</button>
-        <div id="ticketContainer"></div>
+        <section>
+        <button id="addTicket">Add Ticket</button> //Task 1- creating base structure
+        <div id="ticketContainer">
+        </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Support System</p>
